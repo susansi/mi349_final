@@ -3,12 +3,14 @@ body
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .signupFrm
 {
     width: 300px;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
+    box-shadow: 0 0 3px 0 rgba(0,0,0,3);
     background: rgb(241, 220, 240);
     padding: 20px;
     margin: 8% auto 0;
