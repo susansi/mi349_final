@@ -24,10 +24,11 @@ body
  .navbar-logo {
       vertical-align: top;
       display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-right: 20px;
-      margin-top: 15px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-top: -6px;
     }
     
  .navbar-links {
