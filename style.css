@@ -4,12 +4,19 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{
+html {
     font-size: 20px;
     font-family: 'Montserrant', sans-serif;
 }
 a {
     text-decoration: none;
+}
+p {
+    color:black;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    line-height: 1.5rem;
+    letter-spacing: .05rem;
 }
 .container {
     min-height: 100vh;
@@ -18,14 +25,14 @@ a {
     align-items: center;
     justify-content: center;
 }
-#about{
+#about {
     background-image: url(bg.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
 }
-#about::after{
+#about::after {
     content: '';
     position: absolute;
     left: 0;
@@ -35,20 +42,20 @@ a {
     opacity: .2;
     z-index: -1;
 }
-#about .about{
+#about .about {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
     justify-content: flex-start;
 }
-#about h1{
+#about h1 {
     display: block;
     width: fit-content;
     font-size: 3rem;
     position: relative;
     color: rgb(88, 51, 88);
 }
-#about .cta{
+#about .cta {
     display: inline-block;
     padding: 10px 30px;
     color: darkslateblue;
@@ -61,9 +68,68 @@ a {
     transition: .3s ease;
     transition-property: background-color, color;
 }
-#about .cta:hover{
+#about .cta:hover {
     color: white;
     background-color: darkslateblue;
+}
+
+#category .category {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#category .category-title {
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#category .category-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#category .category-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 215, 221);
+    background-size: cover;
+    margin: 10px 5%;
+}
+#category .category-bottom .icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#category .category-item h2 {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#category .category-item p {
+    color: black;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .header__navbar {
