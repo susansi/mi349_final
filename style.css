@@ -8,6 +8,9 @@ html{
     font-size: 20px;
     font-family: 'Montserrant', sans-serif;
 }
+a {
+    text-decoration: none;
+}
 .container {
     min-height: 100vh;
     width: 100%;
@@ -15,20 +18,52 @@ html{
     align-items: center;
     justify-content: center;
 }
-#hero{
-    background-image: url(./background.jpg);
+#about{
+    background-image: url(bg.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
+    z-index: 1;
 }
-#hero::after{
+#about::after{
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    opacity: .7;
+    opacity: .2;
+    z-index: -1;
+}
+#about .about{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#about h1{
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    color: rgb(88, 51, 88);
+}
+#about .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: darkslateblue;
+    background-color: transparent;
+    border: 2px solid darkslateblue;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#about .cta:hover{
+    color: white;
+    background-color: darkslateblue;
 }
 
 .header__navbar {
